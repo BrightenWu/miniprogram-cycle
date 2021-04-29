@@ -8,6 +8,7 @@ A simple Weixin miniprogram.
 ## Platforms & Tools
 * Windows 7 x64
 * [Weixin DevTools Stable Build (1.05.2103200)](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
+* One server(localhost or cloud server).
 
 ## Requirements
 [APPID](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html#申请帐号)
