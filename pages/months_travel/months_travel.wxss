@@ -1,0 +1,63 @@
+/* pages/month_travel/month_travel.wxss */
+.travel_container {
+  background-image: url(http://120.78.139.131:12121/Picture/Page1.jpg);
+}
+
+.hitokoto_block {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hitokoto_text {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.hitokoto_left_container {
+  text-align: left;
+}
+
+.hitokoto_right_container {
+  text-align: right;
+}
+
+.hitokoto_center_container {
+  text-align: center;
+  padding: 0 50rpx;
+}
+
+.hitokoto_author_container {
+  text-align: right;
+  font-weight: 520;
+}
+
+.link_container {
+  text-align: right;
+  font-weight: bold;
+}
+
+.swiper_size {
+  height: 120rpx;
+  width: 100%;
+}
+
+.text_vertical_horizontal_center {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .scroll_view_item {
+  height: 422rpx;
+  display: inline-block;
+  padding: 0 20rpx;
+  width: 100%;
+}
+
+.video_size {
+  height: 422rpx;
+  width: 100%;
+}

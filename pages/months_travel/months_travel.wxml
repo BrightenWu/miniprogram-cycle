@@ -1,0 +1,51 @@
+<!--pages/month_travel/month_travel.wxml-->
+<view class="travel_container page_vertical_container">
+  <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{titleScrollLeft}}">
+    <view class="cu-item {{index==tabCur?'text-green cur':''}}" wx:for="{{months}}" wx:key bindtap="tabSelect"
+      data-id="{{index}}">
+      {{item.month}}
+    </view>
+  </scroll-view>
+
+  <swiper class="swiper_size" current="{{tabCur}}" vertical="true">
+    <swiper-item class="text_vertical_horizontal_center text-cyan text-xl" wx:for="{{months}}" wx:key>
+      <text user-select="true" style="text-shadow: 5rpx 5rpx 5rpx #0081ff;">{{item.title}}</text>
+    </swiper-item>
+  </swiper>
+
+  <scroll-view class="nav" scroll-with-animation scroll-left="{{videoScrollLeft}}" scroll-x="{{videoScrollX}}">
+    <view class="scroll_view_item" wx:for="{{months}}" wx:key>
+      <video class="video_size" src="{{item.url}}" controls="true" show-progress="true" muted="{{false}}"
+        show-fullscreen-btn="true" show-play-btn="true" objectFit="contain" title="{{item.title}}"></video>
+    </view>
+  </scroll-view>
+
+  <view class="text-cyan hitokoto_right_container">
+    <text user-select="true">如有侵权，联系删除 952734510@qq.com</text>
+  </view>
+
+  <view class="text-cyan hitokoto_block">
+    <view class="hitokoto_left_container hitokoto_text">
+      <text user-select="true">『</text>
+    </view>
+
+    <view class="hitokoto_center_container hitokoto_text">
+      <text user-select="true">{{hitokotoText}}</text>
+    </view>
+
+    <view class="hitokoto_right_container hitokoto_text">
+      <text user-select="true">』</text>
+    </view>
+
+    <view class="hitokoto_author_container">
+      <text user-select="true"
+        wx:if="{{(hitokotoAuthor != null && hitokotoAuthor != 'null') || hitokotoWorks != null}}">——</text>
+      <text user-select="true" wx:if="{{hitokotoAuthor != null && hitokotoAuthor != 'null'}}">{{hitokotoAuthor}}</text>
+      <text user-select="true" wx:if="{{hitokotoWorks != null}}">「{{hitokotoWorks}}」</text>
+    </view>
+
+    <view class="link_container">
+      <text user-select="true">友情链接：https://hitokoto.cn/#</text>
+    </view>
+  </view>
+</view>

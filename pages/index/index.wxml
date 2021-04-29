@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="home_container page_vertical_container">
+  <button class="home_btn" style="width:187rpx;height:187rpx;" bindtap="navigateToTravel">Go</button>
+  <!-- <image class="home_img" src="../assets/img/home.jpg" mode="widthFix"></image> -->
+</view>
